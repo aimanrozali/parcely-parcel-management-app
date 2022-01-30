@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
                     String emailTxt = email.getText().toString();
                     String passwordTxt = password.getText().toString();
 
-
+                    //Check if input field empty
                     if (emailTxt.isEmpty() || passwordTxt.isEmpty()) {
                         Toast.makeText(Login.this, "Please enter email or password!", Toast.LENGTH_SHORT).show();
                     } else {
