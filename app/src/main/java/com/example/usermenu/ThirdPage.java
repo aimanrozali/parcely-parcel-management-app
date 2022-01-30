@@ -63,6 +63,7 @@ public class ThirdPage extends AppCompatActivity {
         btn_display.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                openDisplay(user_id);
             }
         });
 
