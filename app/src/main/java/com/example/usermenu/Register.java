@@ -69,7 +69,7 @@ public class Register extends AppCompatActivity {
                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                                                                                if (snapshot.exists()) {
-                                                                                   
+                                                                                   Toast.makeText(Register.this, "Email has already registered", Toast.LENGTH_SHORT).show();
                                                                                } else {
                                                                                    //send data to realtime database
                                                                                    //using phone number as unique identifier of every user
