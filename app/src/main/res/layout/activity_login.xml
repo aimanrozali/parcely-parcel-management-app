@@ -12,7 +12,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/custom_input"
@@ -27,6 +27,7 @@
         android:paddingBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0" />
@@ -44,57 +45,33 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="208dp"
         android:background="@drawable/custom_input"
-        android:ems="10"
         android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
         android:fontFamily="monospace"
         android:hint="Email"
         android:inputType="textPersonName"
         android:paddingLeft="10sp"
-        android:drawablePadding="10dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <!--    <ImageView-->
-<!--        android:id="@+id/imageView6"-->
-<!--        android:layout_width="21dp"-->
-<!--        android:layout_height="20dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/email"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/email"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/email"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/email"-->
-<!--        app:layout_constraintVertical_bias="0.676"-->
-<!--        app:srcCompat="@drawable/email" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView7"-->
-<!--        android:layout_width="19dp"-->
-<!--        android:layout_height="26dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/password"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/password"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/password"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/password"-->
-<!--        app:layout_constraintVertical_bias="0.0"-->
-<!--        app:srcCompat="@drawable/password" />-->
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/blue_fill__rounded_color"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -107,5 +84,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
