@@ -45,7 +45,9 @@ public class CreateQR {
                 view.setImageBitmap(bitmap);
 
             } catch (WriterException e) {
-
+                // this method is called for
+                // exception handling.
+                Log.e("Tag", e.toString());
             }
         }
     }
