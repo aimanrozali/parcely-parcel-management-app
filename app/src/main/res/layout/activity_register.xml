@@ -36,6 +36,7 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/blue_fill__rounded_color"
         android:text="Register"
+        android:textSize="20dp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
