@@ -124,7 +124,7 @@ public class Login extends AppCompatActivity {
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError error) {
-
+                                Toast.makeText(Login.this, "Cannot fetch data from database", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
