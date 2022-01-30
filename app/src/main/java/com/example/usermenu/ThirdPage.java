@@ -90,10 +90,12 @@ public class ThirdPage extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        dbParcel.orderByChild("cusId").equalTo(user_id).addValueEventListener(listener);
     }
 
     @Override
     protected void onStop() {
+        dbParcel.orderByChild("cusId").equalTo(user_id).removeEventListener(listener);
         super.onStop();
     }
 
