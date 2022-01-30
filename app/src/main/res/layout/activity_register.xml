@@ -11,9 +11,10 @@
         android:id="@+id/imageView"
         android:layout_width="229dp"
         android:layout_height="164dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="56dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -30,11 +31,12 @@
 
     <Button
         android:id="@+id/registerBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/blue_fill__rounded_color"
         android:text="Register"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,13 +126,14 @@
         android:id="@+id/regText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/lobster"
         android:gravity="center"
         android:text="Registration"
         android:textColor="@color/white"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

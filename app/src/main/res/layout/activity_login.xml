@@ -70,6 +70,7 @@
         android:layout_marginTop="36dp"
         android:background="@drawable/blue_fill__rounded_color"
         android:text="Login"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
