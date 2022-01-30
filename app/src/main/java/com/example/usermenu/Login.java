@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Login extends AppCompatActivity {
 
 
-    
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance("https://fir-f9b19-default-rtdb.firebaseio.com/").getReference(Users.class.getSimpleName());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
