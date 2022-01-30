@@ -23,7 +23,12 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        //Hide status bar
+        WindowInsetsControllerCompat controller = new WindowInsetsControllerCompat(getWindow(), getWindow().getDecorView());
+        controller.hide( WindowInsetsCompat.Type.systemBars());
 
+        //Hide  aplication bar
+        ActionBar actionBar = getSupportActionBar();
 
         lottieAnimation = findViewById(R.id.parcelicon);
         homescreenbg = findViewById(R.id.homescreenbg);
