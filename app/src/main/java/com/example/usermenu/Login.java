@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
                     String emailTxt = email.getText().toString();
                     String passwordTxt = password.getText().toString();
 
-
+                    //Check if input field empty
                     if (emailTxt.isEmpty() || passwordTxt.isEmpty()) {
                         Toast.makeText(Login.this, "Please enter email or password!", Toast.LENGTH_SHORT).show();
                     } else {
@@ -124,7 +124,7 @@ public class Login extends AppCompatActivity {
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError error) {
-
+                                Toast.makeText(Login.this, "Cannot fetch data from database", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
